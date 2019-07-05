@@ -3,18 +3,15 @@ package com.example.softd.yichun201907.home;
 
 import android.app.Fragment;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.softd.yichun201907.R;
 import com.example.softd.yichun201907.base.BaseFragment;
-import com.example.softd.yichun201907.leadingAndLogin.DotTimeLineAdapter;
-import com.example.softd.yichun201907.leadingAndLogin.Event;
+import com.example.softd.yichun201907.Adapters.DotTimeLineAdapter;
+import com.example.softd.yichun201907.DB.Event;
 import com.vivian.timelineitemdecoration.itemdecoration.DotItemDecoration;
 import com.vivian.timelineitemdecoration.itemdecoration.SpanIndexListener;
 
@@ -25,7 +22,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MyFragment extends BaseFragment {
+public class TimelineFragment extends BaseFragment {
     RecyclerView mRecyclerView;
 
     List<Event> mList = new ArrayList<>();
@@ -51,13 +48,13 @@ public class MyFragment extends BaseFragment {
 
 
 
-    public MyFragment() {
+    public TimelineFragment() {
         // Required empty public constructor
     }
 
     @Override
     protected int initLayout() {
-        return R.layout.fragment_my;
+        return R.layout.fragment_timeline;
     }
 
     @Override

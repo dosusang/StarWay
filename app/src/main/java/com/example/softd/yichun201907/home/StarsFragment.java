@@ -2,12 +2,8 @@ package com.example.softd.yichun201907.home;
 
 
 import android.app.Fragment;
-import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,7 +19,7 @@ import butterknife.Unbinder;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TypeFragment extends BaseFragment {
+public class StarsFragment extends BaseFragment {
 
 
     @BindView(R.id.iv_head)
@@ -36,13 +32,13 @@ public class TypeFragment extends BaseFragment {
     TextView tvContent;
     Unbinder unbinder;
 
-    public TypeFragment() {
+    public StarsFragment() {
         // Required empty public constructor
     }
 
     @Override
     protected int initLayout() {
-        return R.layout.fragment_contact;
+        return R.layout.fragment_stars;
     }
 
     @Override

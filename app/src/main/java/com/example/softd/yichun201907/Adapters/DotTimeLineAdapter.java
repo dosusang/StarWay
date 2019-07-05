@@ -1,4 +1,4 @@
-package com.example.softd.yichun201907.leadingAndLogin;
+package com.example.softd.yichun201907.Adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.softd.yichun201907.DB.Event;
 import com.example.softd.yichun201907.R;
 import com.vivian.timelineitemdecoration.util.Util;
 

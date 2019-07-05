@@ -1,14 +1,9 @@
 package com.example.softd.yichun201907.home;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -19,16 +14,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CircleCrop;
-import com.bumptech.glide.request.RequestOptions;
-import com.example.softd.yichun201907.DB.Account;
-import com.example.softd.yichun201907.DB.UserInfo;
 import com.example.softd.yichun201907.R;
 import com.example.softd.yichun201907.base.BaseActivity;
 import com.example.softd.yichun201907.base.MyApp;
-
-import org.litepal.LitePal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,14 +70,14 @@ public class MainActivity extends BaseActivity {
 
         ButterKnife.bind(this);
 
-        HomeFragment messageFragment = new HomeFragment();
-        TypeFragment contactFragment = new TypeFragment();
-        CartFragment discoverFragment = new CartFragment();
-        MyFragment myFragment = new MyFragment();
+        TasksFragment messageFragment = new TasksFragment();
+        StarsFragment contactFragment = new StarsFragment();
+        NoteFragment discoverFragment = new NoteFragment();
+        TimelineFragment timelineFragment = new TimelineFragment();
         fragmentList.add(messageFragment);
         fragmentList.add(contactFragment);
         fragmentList.add(discoverFragment);
-        fragmentList.add(myFragment);
+        fragmentList.add(timelineFragment);
 
         //给viewPage设置适配器，将四个fragment设置给它
         vpTab.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
