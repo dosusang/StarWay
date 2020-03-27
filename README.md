@@ -5,7 +5,7 @@
 ![Image text](https://github.com/dosusang/StarWay/blob/master/app/images/Wel_imge.jpg)
 
 ## 登陆以及主菜单
-![Image text](https://github.com/dosusang/StarWay/blob/master/app/images/use_Imge.jpg)
+![Image text](https://github.com/dosusang/StarWay/blob/master/app/images/use_imge.jpg)
 
 ## 登陆以及主菜单
-![Image text](https://github.com/dosusang/StarWay/blob/master/app/images/use2_Imge.jpg)
+![Image text](https://github.com/dosusang/StarWay/blob/master/app/images/use2_img.jpg)
